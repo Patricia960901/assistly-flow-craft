@@ -152,3 +152,24 @@
     color: var(--color-foreground);
   }
 }
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    letter-spacing: -0.02em;
+  }
+}
+
+@utility panel-grid {
+  background-image:
+    linear-gradient(to right, var(--color-border) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--color-border) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 1;
+}
